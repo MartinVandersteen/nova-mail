@@ -127,7 +127,7 @@ class NovaSentMail extends Resource
      *
      * @return bool
      */
-    public static function availableForNavigation(NovaRequest $request)
+    public static function availableForNavigation(Request $request)
     {
         return config('nova_mail.show_resources.nova_sent_mail');
     }
