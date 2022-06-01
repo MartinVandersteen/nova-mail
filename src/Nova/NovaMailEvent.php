@@ -7,6 +7,7 @@ use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\BelongsTo;
+use Laravel\Nova\Http\Requests\NovaRequest;
 use KirschbaumDevelopment\NovaMail\Models\NovaMailEvent as NovaMailEventModel;
 
 class NovaMailEvent extends Resource

@@ -9,6 +9,7 @@ use Laravel\Nova\Fields\Code;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Number;
 use KirschbaumDevelopment\NovaMail\Events;
+use Laravel\Nova\Http\Requests\NovaRequest;
 use KirschbaumDevelopment\NovaMail\Models\NovaMailTemplate as NovaMailTemplateModel;
 
 class NovaMailTemplate extends Resource
