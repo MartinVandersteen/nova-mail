@@ -51,7 +51,7 @@ class SendMail extends Action
      *
      * @return array
      */
-    public function fields()
+    public function fields(NovaRequest $request)
     {
         return [
             SendMailField::make('Mail'),

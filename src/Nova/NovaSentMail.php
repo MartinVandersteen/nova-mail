@@ -45,7 +45,7 @@ class NovaSentMail extends Resource
      *
      * @return array
      */
-    public function fields(Request $request)
+    public function fields(NovaRequest $request)
     {
         return [
             MorphTo::make('mailable')->hideFromIndex(),
@@ -68,7 +68,7 @@ class NovaSentMail extends Resource
      *
      * @return array
      */
-    public function cards(Request $request)
+    public function cards(NovaRequest $request)
     {
         return [];
     }
@@ -80,7 +80,7 @@ class NovaSentMail extends Resource
      *
      * @return array
      */
-    public function filters(Request $request)
+    public function filters(NovaRequest $request)
     {
         return [];
     }
@@ -92,7 +92,7 @@ class NovaSentMail extends Resource
      *
      * @return array
      */
-    public function lenses(Request $request)
+    public function lenses(NovaRequest $request)
     {
         return [];
     }
@@ -104,7 +104,7 @@ class NovaSentMail extends Resource
      *
      * @return array
      */
-    public function actions(Request $request)
+    public function actions(NovaRequest $request)
     {
         return [];
     }
@@ -126,7 +126,7 @@ class NovaSentMail extends Resource
      *
      * @return bool
      */
-    public static function availableForNavigation(Request $request)
+    public static function availableForNavigation(NovaRequest $request)
     {
         return config('nova_mail.show_resources.nova_sent_mail');
     }
